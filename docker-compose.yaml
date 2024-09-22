@@ -11,7 +11,8 @@ services:
       - REPLACE_WITH_YOUR_BACKEND_DATA_PATH:/app/backend/data
       - REPLACE_WITH_YOUR_ZEROTIER_PATH:/var/lib/zerotier-one  # ZeroTier data
       # Example:
-      # - /media/frans/frans-docker/docker/openwebui:/app/backend/data
+      # - /media/frans/frans-docker/docker/openwebui/backend-data:/app/backend/data
+      # - /media/frans/frans-docker/docker/openwebui/zerotier-one:/var/lib/zerotier-one
     deploy:
       restart_policy:
         condition: on-failure
